@@ -1,7 +1,7 @@
 # A simple Next.js statically generated application, running on Spin
 
 This is a template for building and statically exporting your
-[Next.js 13](https://nextjs.org) application and running it on
+[Next.js 14](https://nextjs.org) application and running it on
 [`Fermyon Spin`](https://developer.fermyon.com/spin).
 
 ## Using the template
@@ -23,7 +23,7 @@ Installed 1 template
 Then, you can either create a new application based on this template:
 
 ```console
-$ spin new nextjs-frontend my-nextjs-app --allow-defaults
+$ spin new -t nextjs-frontend my-nextjs-app --allow-defaults
 # your new application has been created in the my-nextjs-app directory
 ```
 
@@ -32,8 +32,8 @@ Spin application:
 
 ```console
 # first, create a new Spin application
-$ spin new http-empty my-spin-app --accept-defaults && cd my-spin-app
-$ spin add nextjs-frontend --accept-defaults
+$ spin new -t http-empty my-spin-app --accept-defaults && cd my-spin-app
+$ spin add -t nextjs-frontend --accept-defaults
 ```
 
 ## Building and running your application
@@ -49,7 +49,7 @@ Use another Spin template to build your serverless back-end and call it from
 your newly-built front-end. For example:
 
 ```console
-$ spin add http-ts api
+$ spin add -t http-ts api
 # a new Spin component called `api` has now been created in your application
 $ spin build && spin up
 Available Routes:
