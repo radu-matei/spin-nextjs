@@ -23,7 +23,7 @@ Installed 1 template
 Then, you can either create a new application based on this template:
 
 ```console
-$ spin new -t nextjs-frontend my-nextjs-app --allow-defaults
+$ spin new -t nextjs-frontend my-nextjs-app
 # your new application has been created in the my-nextjs-app directory
 ```
 
